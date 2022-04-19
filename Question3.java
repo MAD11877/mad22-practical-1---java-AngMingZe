@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 public class Question3
 {
+  public static final int power = 2;
   public static void main(String[] args)
   {
     /**
@@ -10,7 +11,11 @@ public class Question3
      * Hint: in.nextInt() to read integer
      */
      
-    Scanner in = new Scanner(System.in);
+    Scanner in = new Scanner(System.in); 
+    System.out.print("Enter integer: ");
+    int num = in.nextInt();
+    num = (int) Math.pow(num,power);
+    System.out.println("Number ** 2 is " + power);
     
   }
 }
