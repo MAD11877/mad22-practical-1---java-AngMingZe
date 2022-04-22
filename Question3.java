@@ -12,10 +12,10 @@ public class Question3
      */
      
     Scanner in = new Scanner(System.in); 
-    System.out.print("Enter integer: ");
+    /* System.out.print("Enter integer: "); */
     int num = in.nextInt();
     num = (int) Math.pow(num,power);
-    System.out.println("Number ** 2 is " + power);
+    System.out.println(num);
     
   }
 }
