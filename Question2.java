@@ -22,10 +22,11 @@ public class Question2
     
     /* System.out.println("Your weight is: " + wei); */
 
-    double bmi = wei/(double) Math.pow(height/100, 2);
-    double bmiRounded2 = (double) Math.round(bmi * 100) / 100;
+    double bmi = wei/(double) Math.pow(height, 2);
+    /* double bmiRounded2 = (double) Math.round(bmi * 100) / 100; */
     
-    System.out.println("Your bmi is: " + bmiRounded2);
+    /* System.out.println("Your bmi is: " + bmiRounded2);*/
+    System.out.println(bmi);
   }
 }
 
