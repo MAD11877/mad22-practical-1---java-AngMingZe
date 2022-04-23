@@ -50,7 +50,7 @@ public class Question5
       m1 = nList.get(m);
       count1 = 0;
       
-      for(int j = 0; j <= nList.size() ;j++){
+      for(int j = 0; j < nList.size() ;j++){
         if (m1 == nList.get(j)) count1++; //Gets total count of 'm' number 
       }
       if (count1 > count2){
