@@ -27,6 +27,38 @@ public class Question5
      */
      
     Scanner in = new Scanner(System.in);
+    List<Integer> nList = new ArrayList<>();
+
+    //System.out.print("Enter integer: ");
+
+    int counter = in.nextInt();
+
+    for(int i = 0; i < counter; i++){
+      //System.out.print("Enter integer: ");
+      nList.add(in.nextInt());
+    }
+
+    int count1 = 0; 
+    int count2 = 0; 
+    int m1 = 0; //Current mode
+    int m2 = 0; //Mode to be comapared
+
+    for (int m = 0; m < nList.size(); m++){
+      
+      m1 = nList.get(m);
+      count1 = 0;
+      
+      for(int j = 0; j < nList.size() + 1;j++){
+        if (m1 == nList.get(j)) count1++; //Gets total count of 'm' number 
+      }
+      if (count1 > count2){
+        m2 = m1;
+        count2 = count1;
+      }  
+      
+    }
+
+    System.out.print(m2);
     
   }
 }
